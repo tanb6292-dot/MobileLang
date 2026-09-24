@@ -1,0 +1,5 @@
+set url = "https://api.github.com"
+get url as response
+print "API Connection Check Success!"
+notify "MobileLang Engine V3 Executed!"
+vibrate 100
