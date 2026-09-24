@@ -37,3 +37,6 @@ jobs:
       with:
         name: MobileLang-APK
         path: bin/*.apk
+      with:
+        name: MobileLang-APK
+        path: bin/*.apk
