@@ -37,10 +37,13 @@ jobs:
         restore-keys: |
           buildozer-${{ runner.os }}-
 
-    - name: Install Buildozer and Cython
+    - name: Install Buildozer and Dependencies
       run: |
         pip install --upgrade pip setuptools wheel
-        pip install "cython<3.0.0" buildozer
+        # ⭐ Version တွေကို pin လုပ်ထားတယ်
+        pip install "cython==0.29.36"
+        pip install "buildozer==1.5.0"
+        pip install "python-for-android==2023.9.16"
 
     - name: Build APK with Buildozer
       run: |
